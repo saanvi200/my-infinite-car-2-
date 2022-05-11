@@ -60,7 +60,7 @@ function draw() {
     }
     
       
-    }else{
+    else{
       if(bombGroup.isTouching(car)) {
         gameState=END;
         
@@ -75,11 +75,11 @@ function draw() {
         
         cashGroup.setVelocityYEach(0);
         bombGroup.setVelocityYEach(0);
-        path.velocityY = 0
+        path.velocityY=0
      
     }
   }
-  
+}
   drawSprites();
   textSize(20);
   fill(255);
@@ -110,3 +110,4 @@ function createbomb(){
   bombGroup.add(bomb);
   }
 }
+
